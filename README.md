@@ -14,6 +14,8 @@ You need to have Node.js (Node) installed onto your computer before you can inst
 If you do not have Node installed already, you can get it by downloading the package installer from Node's website:<br>
 https://nodejs.org/en/<br>
 <br><br>
+Open your termianl and browse to the directory this directory (Contains bower.json)
+<br><br>
 <strong>INSTALL COMMANDS:</strong><br>
 $ bower install<br>
 $ sudo npm install gulp -g<br>
