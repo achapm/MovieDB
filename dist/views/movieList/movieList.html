@@ -1,0 +1,28 @@
+<!-- This section will create the movie poster grid layout -->
+<div class="container">
+  <div class="row">
+    <!-- Iterate over search results -->
+    <div data-ng-repeat="movie in movies | filter:{poster_path: ''}" class="movie-panel col-md-2 col-sm-3 col-xs-12">
+      <!-- Bring in the movie poster using the crop directive -->
+      <div class="movie-img" back-img-crop="http://image.tmdb.org/t/p/w342{{movie.poster_path}}"></div>
+      <!-- Display the release date and vote average when the user hovers over the poster image -->
+      <div class="movie-overlay">
+	      <div class="movie-info">
+		      <!-- Display the release date -->
+		      <div class="release-date">
+		      	Released: {{movie.release_date | date:'M/d/yyyy'}}
+		      </div>
+		      <!-- Display the vote average and start rating directive -->
+	      	<div class="vote-average"> 
+	      			{{movie.vote_average}} Stars
+					    <div star-rating rating-value="movie.vote_average" max="10" ></div>
+					</div>
+				</div>
+				<div class="movie-info-panel"></div>
+			</div>
+			<!-- Display the movie title under the poster image -->
+      {{movie.title}}
+    </div>
+  </div>
+</div>
+

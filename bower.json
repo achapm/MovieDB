@@ -1,0 +1,28 @@
+{
+  "name": "lazyLoading",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Aaron Chapman <achapm@gmail.com>"
+  ],
+  "description": "Search movies using themoviedb.org using angularjs",
+  "main": "index.html",
+  "keywords": [
+    "lazy"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-resource": "^1.5.3"
+  }
+}

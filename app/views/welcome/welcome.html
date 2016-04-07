@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+  	
+  	<!-- Provide a description of tech and functionality -->
+    <h1>Search Movies</h1>
+    <p>This is a demo using the AngularJS framework, Bootstrap Sass for styling, Gulp for rapid development and Bower for package management. It consumes the themoviedb.org API as a service to provide search results.
+    <p>By default we are displaying what is currently in theaters. You can hover over the movie posters to see the release date and votes. You can also search for other movies below. Results will display in real-time as you type.</p>
+
+    <!-- Include search form -->
+		<div ng-include="'views/searchForm/searchForm.html'"></div>
+</div>
+
+<hr>
+
+<!-- Include search results -->
+<div ng-include="'views/movieList/movieList.html'"></div>
+
+<hr>

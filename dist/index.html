@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="movies"> 
+<head>
+  <meta charset="utf-8">
+  <title>Search Movies Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+  <!-- Include top navigation bar -->
+  <div ng-include="'views/navigation/navigation.html'"></div>
+
+  <div class="container">
+
+    <div class="body-content">
+
+      <!-- Load page content -->
+      <div data-ng-view data-ng-cloak></div>
+
+      <!-- Include footer -->
+      <div ng-include="'views/footer/footer.html'"></div>
+
+    </div> <!-- /body-content -->
+
+  </div> <!-- /container -->
+  <script src="components/jquery/dist/jquery.min.js"></script>
+  <script src="components/angular/angular.js"></script>
+  <script src="components/angular-route/angular-route.min.js"></script>
+  <script src="components/angular-resource/angular-resource.min.js"></script>
+  <script src="js/main.min.js"></script>
+  
+</body>
+</html>
