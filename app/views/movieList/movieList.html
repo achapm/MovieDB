@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <!-- Iterate over search results -->
-    <div data-ng-repeat="movie in movies | filter:{poster_path: ''}" class="movie-panel col-md-2 col-sm-3 col-xs-12">
+    <div data-ng-repeat="movie in movies | filter:{poster_path: ''}" class="movie-panel col-md-2 col-sm-3 col-xs-6">
       <!-- Bring in the movie poster using the crop directive -->
       <div class="movie-img" back-img-crop="http://image.tmdb.org/t/p/w342{{movie.poster_path}}"></div>
       <!-- Display the release date and vote average when the user hovers over the poster image -->
