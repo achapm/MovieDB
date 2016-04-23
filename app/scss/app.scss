@@ -5,67 +5,67 @@
 // Begin Movie Poster SCSS
 // **********************
 .movie-panel {
-  height: 300px;
+	height: 300px;
 	.movie-img {
-	  width: 150px;
-	  -webkit-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	  -moz-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	  margin-bottom: 20px;
-	}
-	// Overlay that appears when you hover on a poster
-	.movie-overlay {
-	  display: none;
-		.movie-info {
-		  position: absolute;
-		  top: 130px;
-		  margin-left: 5px;
-		  font-weight: bold;
-		  color: #222;
-		  z-index: 1;
-		  // Display the release date
-		  .release-date {
-			  margin-top: 15px;
-			}
-			// Display the number of votes
-			.vote-average {
-			  margin-top: 10px;
-			  // Display votes as stars
-			  .rating {
-					display: inline-block;
-				  white-space: nowrap;
-					color: #a9a9a9;
-				  margin: 0;
-				  padding: 0;
-				  li {
-				    list-style-type: none;
-				    display: inline-block;
-				    /* padding: 1px; */
-				    text-align: center;
-				    font-weight: bold;
-				    cursor: pointer;
-				  }
-				  .filled {
-				    color: blue;
-				  }
-				}
-			}
-		}
-		// This is hover over panel that displays behind the release data and votes
-		.movie-info-panel {
-		  position: absolute;
-		  top: 130px;
-		  width: 150px;
-		  height: 90px;
-		  font-weight: bold;
-		  color: #222;
-		  opacity: .9;
-		  background-color: #FFF;
-		}
+		width: 150px;
+		-webkit-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+		margin-bottom: 20px;
 	}
 	// This is the hover over action that displays release data and votes
 	.movie-img:hover + .movie-overlay, .movie-overlay:hover {
-	  display: block;
+		display: block;
+	}
+}
+
+// Overlay that appears when you hover on a poster
+.movie-overlay {
+  display: none;
+	.movie-info {
+		position: absolute;
+		top: 130px;
+		margin-left: 5px;
+		font-weight: bold;
+		color: #222;
+		z-index: 1;
+		// Display the release date
+		.release-date {
+			margin-top: 15px;
+		}
+	}
+	// This is hover over panel that displays behind the release data and votes
+	.movie-info-panel {
+		position: absolute;
+		top: 130px;
+		width: 150px;
+		height: 90px;
+		font-weight: bold;
+		color: #222;
+		opacity: .9;
+		background-color: #FFF;
+	}
+	// Display the number of votes
+	.vote-average {
+		margin-top: 10px;
+	}
+	// Display votes as stars
+	.rating {
+		display: inline-block;
+		white-space: nowrap;
+		color: #a9a9a9;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.filled {
+			color: blue;
+		}
 	}
 }
 // **********************
