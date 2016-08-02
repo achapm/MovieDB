@@ -28,3 +28,5 @@ $ gulp watch
 ### FINAL BUILD:
 You can create a distributable build with all CSS and JS concatenated and minified by running this command:
 $ gulp build
+
+...
